@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-flex {
+  display: flex;
+}
+.content__image {
+  width: 500px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+.content__image img {
+  object-fit: cover;
+}
+.content__barra {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  height: 50px;
+  width: 600px;
+  padding: 10px;
+  transition: box-shadow 0.5s;
+}
+.content__barra:focus-within {
+  box-shadow: 3px 3px 0 rgba(204, 204, 204, 0.6235294118);
+}
+.content__barra-select {
+  border: 1px solid #ccc;
+  color: #222;
+  outline: none;
+  border-radius: 16px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: transparent;
+  padding: 0 3rem;
+  appearance: none;
+  background-image: url(../img/Google__G__Logo.svg), url(../img/angle_down_icon_188314.svg);
+  background-position: 1rem center, 11rem center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.content__barra-input {
+  outline: none;
+  border: none;
+  width: 90%;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #222;
+}
+.content__barra-boton {
+  background-color: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+.content__barra-boton:hover {
+  color: #4343f3;
+}
+
+/*# sourceMappingURL=style.css.map */

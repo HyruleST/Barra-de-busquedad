@@ -1,0 +1,75 @@
+@use 'mixins';
+*{
+    @include mixins.format;
+}
+body{
+    background-color: mixins.$bg-color;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    @include mixins.flex(center,center,column);
+    &-flex{
+        display: flex;
+    }
+
+    &__image{
+        width: 500px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        & img{
+            object-fit: cover;
+        }
+    }
+    &__barra{
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        height: 50px;
+        width: 600px;
+        padding: 10px;
+        transition: box-shadow .5s;
+        &:focus-within{
+            box-shadow: 3px 3px 0 #cccccc9f;
+        }
+        &-select{
+            border: 1px solid #ccc;
+            color: #222;
+            outline: none;
+            border-radius: 16px;
+            height: 50px;
+            margin-left: 10px;
+            background-color: transparent;
+            padding: 0 3rem;
+            appearance: none;
+            background-image: url(../img/Google__G__Logo.svg), url(../img/angle_down_icon_188314.svg);
+            background-position: 1rem center, 11rem center;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        &-input{
+            outline: none;
+            border: none;
+            width: 90%;
+            background-color: transparent;
+            font-size: 1.2rem;
+            color: #222;
+        }
+        &-boton{
+            background-color: transparent;
+            border: none;
+            color: #aaa;
+            font-size: 20px;
+            transition: color .2s;
+            &:hover{
+                color: #4343f3;
+            }
+        }
+    }
+}
+

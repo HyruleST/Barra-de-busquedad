@@ -1,0 +1,12 @@
+$bg-color: #fff;
+@mixin flex($justify,$align,$direccion){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin format{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
