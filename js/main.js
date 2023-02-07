@@ -5,6 +5,7 @@ const comprobar = () =>{
     let select = document.querySelector('#browser-val');
     if(val == "google"){
         let valor = logo.src;
+        console.log(valor);
         if(valor != "https://hyrulest.github.io/img/Google_wordmark.svg"){
             logo.src = "https://hyrulest.github.io/img/Google_wordmark.svg";
             select.style.backgroundImage = "url(../img/Google__G__Logo.svg), url(../img/angle_down_icon_188314.svg)";
@@ -12,6 +13,7 @@ const comprobar = () =>{
     }
     else if(val == "bing"){
         let valor = logo.src;
+        console.log(valor);
         if(valor != "https://hyrulest.github.io/img/Bing_logo_PNG8.png"){
             logo.src = "https://hyrulest.github.io/img/Bing_logo_PNG8.png"
             select.style.backgroundImage = "url(../img/Microsoft_logo.svg), url(../img/angle_down_icon_188314.svg)";
@@ -19,6 +21,7 @@ const comprobar = () =>{
     }
     else if(val == "duck"){
         let valor = logo.src;
+        console.log(valor);
         if(valor != "https://hyrulest.github.io/img/DuckDuckGo_logo.svg.png"){
             logo.src = "https://hyrulest.github.io/img/DuckDuckGo_logo.svg.png";
             select.style.backgroundImage = "url(../img/duckduckgo-seeklogo.com.svg), url(../img/angle_down_icon_188314.svg)";
@@ -26,6 +29,7 @@ const comprobar = () =>{
     }
     else if (val == "youtube"){
         let valor = logo.src;
+        console.log(valor);
         if(valor != "https://hyrulest.github.io/img/youtube.svg.png"){
             logo.src = "https://hyrulest.github.io/img/youtube.svg.png";
             select.style.backgroundImage = "url(../img/youtube-svgrepo-com.svg), url(../img/angle_down_icon_188314.svg)";
