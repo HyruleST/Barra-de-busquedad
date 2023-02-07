@@ -8,7 +8,7 @@ const comprobar = () =>{
         select.style.backgroundImage = "url(../img/Google__G__Logo.svg), url(../img/angle_down_icon_188314.svg)";
     }
     else if(val == "bing"){
-        logo.src = "../img/Bing_logo_PNG8.png"
+        logo.src = "http://127.0.0.1:5500/img/Bing_logo_PNG8.png"
         select.style.backgroundImage = "url(../img/Microsoft_logo.svg), url(../img/angle_down_icon_188314.svg)";
     }
     else if(val == "duck"){
@@ -16,7 +16,7 @@ const comprobar = () =>{
         select.style.backgroundImage = "url(../img/duckduckgo-seeklogo.com.svg), url(../img/angle_down_icon_188314.svg)";
     }
     else if (val == "youtube"){
-        logo.src = "../img/youtube.svg.png";
+        logo.src = "http://127.0.0.1:5500/img/youtube.svg.png";
         select.style.backgroundImage = "url(../img/youtube-svgrepo-com.svg), url(../img/angle_down_icon_188314.svg)";
     }
 };
