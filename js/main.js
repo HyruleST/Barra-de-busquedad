@@ -5,20 +5,20 @@ const comprobar = () =>{
     let select = document.querySelector('#browser-val');
     if(val == "google"){
         logo.src = "http://127.0.0.1:5500/img/Google_wordmark.svg";
-        select.style.backgroundImage = "url(../img/Google__G__Logo.svg), url(../img/angle_down_icon_188314.svg)";
-    }
-    else if(val == "bing"){
+        select.style.backgroundImage = "url(http://127.0.0.1:5500/img/Google__G__Logo.svg), url(http://127.0.0.1:5500/img/angle_down_icon_188314.svg)";
+     }
+     else if(val == "bing"){
         logo.src = "http://127.0.0.1:5500/img/Bing_logo_PNG8.png"
-        select.style.backgroundImage = "url(../img/Microsoft_logo.svg), url(../img/angle_down_icon_188314.svg)";
-    }
-    else if(val == "duck"){
+        select.style.backgroundImage = "url(http://127.0.0.1:5500/img/Microsoft_logo.svg), url(http://127.0.0.1:5500/img/angle_down_icon_188314.svg)";
+     }
+     else if(val == "duck"){
         logo.src = "http://127.0.0.1:5500/img/DuckDuckGo_logo.svg.png";
-        select.style.backgroundImage = "url(../img/duckduckgo-seeklogo.com.svg), url(../img/angle_down_icon_188314.svg)";
-    }
-    else if (val == "youtube"){
+        select.style.backgroundImage = "url(http://127.0.0.1:5500/img/duckduckgo-seeklogo.com.svg), url(http://127.0.0.1:5500/img/angle_down_icon_188314.svg)";
+     }
+     else if (val == "youtube"){
         logo.src = "http://127.0.0.1:5500/img/youtube.svg.png";
-        select.style.backgroundImage = "url(../img/youtube-svgrepo-com.svg), url(../img/angle_down_icon_188314.svg)";
-    }
+        select.style.backgroundImage = "url(http://127.0.0.1:5500/img/youtube-svgrepo-com.svg), url(http://127.0.0.1:5500/img/angle_down_icon_188314.svg)";
+     }
 };
 search.addEventListener('click',() =>{
     let val = document.querySelector('#browser-val').value;
