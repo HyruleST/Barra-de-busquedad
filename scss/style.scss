@@ -74,4 +74,48 @@ body{
         }
     }
 }
+@media screen and (max-width: 850px){
+    .content{
+        &__image{
+            & img{
+                width: 400px;
+            }
+        } 
+        &__barra{
+            width: 475px;
+            margin-bottom: 10px;
+            &-select{
+                width: 475px;
+                background-position: 1rem center, right center;
+            }
+        }
 
+        &-flex{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+@media screen and (max-width: 500px){
+    .content{
+        &__image{
+            & img{
+                width: 290px;
+            }
+        } 
+        &__barra{
+            width: 290px;
+            margin-bottom: 10px;
+            &-select{
+                width: 290px;
+                background-position: 1rem center, right center;
+            }
+        }
+
+        &-flex{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
