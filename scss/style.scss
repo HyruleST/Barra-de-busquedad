@@ -32,8 +32,9 @@ body{
         width: 600px;
         padding: 10px;
         transition: box-shadow .5s;
+        box-shadow: 3px 3px 0 #cccccc9f;
         &:focus-within{
-            box-shadow: 3px 3px 0 #cccccc9f;
+            box-shadow: 3px 3px 0 #a5a4a49f;
         }
         &-select{
             border: 1px solid #ccc;
@@ -51,6 +52,7 @@ body{
             background-repeat: no-repeat;
             font-size: 1.2rem;
             font-weight: 400;
+            box-shadow: 3px 3px 0 #cccccc9f;
         }
         &-input{
             outline: none;
