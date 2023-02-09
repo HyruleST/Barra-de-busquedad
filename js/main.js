@@ -50,19 +50,20 @@ document.documentElement.addEventListener("keyup",(evt)=>{
 	if (evt.which == 13) {
 		let search = document.querySelector("#search").value;
 		if (search.length > 0) {
-            let val = document.querySelector('#browser-val').value;
-            if(val == "google"){
-            window.open("https://www.google.com/search?q=" + search);
-            }
-            else if(val == "bing"){
-                window.open("https://www.bing.com/search?q=" + search);
-            }
-            else if(val == "duck"){
-                window.open("https://www.duckduckgo.com/?q=" + search);
-            }
-            else if(val == "youtube"){
-                window.open("https://www.youtube.com/results?search_query=" + search)
-            }
+			let val = document.querySelector('#browser-val').value;
+			if(val == "google"){
+			window.open("https://www.google.com/search?q=" + search);
+			}
+			else if(val == "bing"){
+			window.open("https://www.bing.com/search?q=" + search);
+			}
+			else if(val == "duck"){
+			window.open("https://www.duckduckgo.com/?q=" + search);
+			}
+			else if(val == "youtube"){
+			window.open("https://www.youtube.com/results?search_query=" + search)
+			}
 		}
 	}
 })
+
